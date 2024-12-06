@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Proyecto</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="css-container">
+			<aside class="sidebar">
+				<header class="header_">
+					<a class="header-title" href="./index.html">
+						<img
+							src="src/iconos/logo.svg"
+							alt="Inicio"
+							width="140"
+							height="60"
+						/>
+					</a>
+				</header>
+				<nav class="menu">
+					<ul>
+						<li><a href="./galeria.html">Eventos</a></li>
+						<li><a href="./carrera.html">Carrera</a></li>
+						<li><a href="./estudios.html">Estudios</a></li>
+						<li><a href="./trabajo.html">Trabajo previo</a></li>
+						<li><a href="./generos.html">Géneros</a></li>
+						<li style="background-color: #992288">
+							<a href="./galeria.html">Galería</a>
+						</li>
+						<li><a href="./redes.html">Redes Sociales</a></li>
+						<li><a href="./contratacion.html">Contratación</a></li>
+						<li><a href="./contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<main class="content">
+				<h1 class="section-title">Galeria</h1>
+				<div style="width: 45%" class="hr mb-2" role="separator">
+					<div class="hr-line"></div>
+					<img
+						src="src/iconos/sol.svg"
+						aria-hidden="true"
+						width="20"
+						height="40"
+					/>
+					<div class="hr-line"></div>
+				</div>
+				<section class="flex-container-row">
+					<div
+						id="carouselExample"
+						class="carousel slide"
+						style="width: 45%"
+					>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									src="src/galeria/1.jpeg"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="src/galeria/2.jpeg"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="src/galeria/3.jpeg"
+									class="d-block w-100"
+									alt="..."
+								/>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExample"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExample"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="styles/bootstrap/js/bootstrap.bundle.js"></script>
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Proyecto</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link href="styles/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="css-container">
+			<aside class="sidebar">
+				<header class="header_">
+					<a class="header-title" href="./index.html">
+						<img
+							src="src/iconos/logo.svg"
+							alt="Inicio"
+							width="140"
+							height="60"
+						/>
+					</a>
+				</header>
+				<nav class="menu">
+					<ul>
+						<li><a href="./eventos.html">Eventos</a></li>
+						<li><a href="./carrera.html">Carrera</a></li>
+						<li><a href="./estudios.html">Estudios</a></li>
+						<li><a href="./trabajo.html">Trabajo previo</a></li>
+						<li><a href="./generos.html">Géneros</a></li>
+						<li><a href="./galeria.html">Galería</a></li>
+						<li><a href="./redes.html">Redes Sociales</a></li>
+						<li><a href="./contratacion.html">Contratación</a></li>
+						<li style="background-color: #992288">
+							<a href="./contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+			<main class="content">
+				<section class="flex-container-row">
+					<div class="flex-item">
+						<h1 class="section-title">Contacto</h1>
+						<div class="hr" role="separator" style="width: 19.5rem;">
+							<div class="hr-line"></div>
+							<img
+								src="src/iconos/sol.svg"
+								aria-hidden="true"
+								width="20"
+								height="40"
+							/>
+							<div class="hr-line"></div>
+						</div>
+                        <div class="flex-item flex-container-row">
+							<form style="width: 55%;">
+								<div class="form-group">
+									<label for="nombre">Nombre:</label>
+									<input
+										type="text"
+										class="form-control"
+										id="nombre"
+										name="nombre"
+										required
+										style="background-color: #282828; color: #EBDBB2; border: 1px solid #EBDBB2"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="correo">Correo:</label>
+									<input
+										type="email"
+										class="form-control"
+										id="correo"
+										name="correo"
+										required
+										style="background-color: #282828; color: #EBDBB2; border: 1px solid #EBDBB2"
+									/>
+								</div>
+								<div class="form-group">
+									<label for="mensaje">Mensaje:</label>
+									<textarea
+										class="form-control"
+										id="mensaje"
+										name="mensaje"
+										required
+										style="background-color: #282828; color: #EBDBB2; border: 1px solid #EBDBB2"
+									></textarea>
+								</div>
+								<button id="btn" class="btn btn-primary" style="background-color: #992288; color: #EBDBB2;" >
+									Enviar
+								</button>
+						</div>
+					</div>
+					<div class="flex-item">
+						<img
+							src="./src/contacto/img-1.png"
+							style="
+								margin-top: 2rem;
+								width: 30rem;
+								margin-left: 10%;
+							"
+							alt="portada"
+						/>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
