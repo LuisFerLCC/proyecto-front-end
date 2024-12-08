@@ -13,9 +13,12 @@
 		/>
 	</head>
 	<body>
+		<button class="hamburger-menu" aria-label="Toggle menu">
+			&#9776;
+		</button>
 		<div class="css-container">
 			<aside class="sidebar">
-				<header class="header_">
+				<header class="header">
 					<a class="header-title" href="./index.html">
 						<img
 							src="src/iconos/logo.svg"
@@ -172,13 +175,13 @@
 							</ul>
 						</div>
 					</div>
-					<div class="flex-item">
+					<div class="flex-img">
 						<img
 							src="./src/estudios/img-1.jpeg"
 							style="
 								margin-top: 9rem;
 								width: 30rem;
-								margin-left: 30%;
+								margin-left: 6rem;
 							"
 							alt="portada"
 						/>
@@ -186,5 +189,12 @@
 				</section>
 			</main>
 		</div>
+		<script>
+			const hamburgerMenu = document.querySelector('.hamburger-menu');
+			const sidebar = document.querySelector('.sidebar');
+			hamburgerMenu.addEventListener('click', () => {
+				sidebar.classList.toggle('active');
+			});
+		</script>
 	</body>
 </html>
