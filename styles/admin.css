@@ -1,0 +1,118 @@
+:root {
+	--bs-primary: #992288;
+	--bs-primary-hover: #7a1b6c;
+	--bs-primary-active: #771969;
+	--bs-primary-active-border: #6b1560;
+
+	scrollbar-color: #ebdbb2 #282828;
+	scrollbar-width: thin;
+}
+.btn-primary {
+	--bs-btn-bg: var(--bs-primary);
+	--bs-btn-border-color: var(--bs-primary);
+	--bs-btn-hover-bg: var(--bs-primary-hover);
+	--bs-btn-hover-border-color: var(--bs-primary-active);
+	--bs-btn-active-bg: var(--bs-primary-active);
+	--bs-btn-active-border-color: var(--bs-primary-active-border);
+	--bs-btn-focus-shadow-rgb: 255, 89, 231;
+}
+
+body {
+	background-color: #282828;
+	color: #ebdbb2;
+}
+
+header {
+	margin: 1.5rem;
+
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.title * {
+	margin: 0;
+}
+
+h1 {
+	font-family: "Charis SIL", serif;
+	font-size: 2.7rem;
+}
+
+.center-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#page {
+	padding: 2rem;
+
+	gap: 2rem;
+}
+
+.card,
+.form-control {
+	background-color: #282828;
+	color: #ebdbb2;
+
+	border-color: #ebdbb2;
+}
+
+.card {
+	width: 350px;
+}
+
+.card-body {
+	padding: 2rem;
+}
+
+.card-title {
+	font-family: "Charis SIL", serif;
+}
+
+.form-control {
+	margin-bottom: 1rem;
+}
+
+.hr {
+	margin-bottom: 1rem;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.hr-line {
+	height: 1px;
+	flex-grow: 1;
+	background-color: #ebdbb2;
+}
+
+.name {
+	margin-bottom: 0;
+}
+
+a {
+	color: #c465b6;
+
+	font-size: small;
+	text-decoration: none;
+}
+
+.no-messages {
+	text-align: center;
+	color: #aca79b;
+}
+
+.no-messages h2 {
+	font-family: "Charis SIL", serif;
+}

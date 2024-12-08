@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 	res.send("Pong");
 });
 
-app.get("/mensajes", async (req, res) => {
+app.post("/get-mensajes", async (req, res) => {
 	try {
 		const { correo, contrasena } = req.body;
 		const usuarios =
