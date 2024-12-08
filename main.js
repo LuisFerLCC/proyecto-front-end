@@ -10,12 +10,11 @@ btn.addEventListener("click", postMensaje);
 async function postMensaje(event) {
 	event.preventDefault();
 
-	if (!nombre.value) return alert("Por favor, ingresa tu nombre.");
-	if (!correo.value)
-		return alert("Por favor, ingresa tu correo electrónico.");
+	if (!nombre.value) return inputFaltante("nombre");
+	if (!correo.value) return inputFaltante("correo electrónico");
 	if (!correoRegex.test(correo.value))
-		return alert("Por favor, ingresa un correo electrónico válido.");
-	if (!mensaje.value) return alert("Por favor, ingresa el mensaje.");
+		return inputInvalido("correo electrónico");
+	if (!mensaje.value) return inputFaltante("mensaje");
 
 	let data = {
 		nombre: nombre.value,
@@ -43,13 +42,34 @@ async function postMensaje(event) {
 		correo.value = "";
 		mensaje.value = "";
 
-		alert("Mensaje enviado correctamente.");
+		Swal.fire({
+			icon: "success",
+			title: "Mensaje enviado",
+			text: "Tu mensaje ha sido enviado con éxito",
+		});
 	} catch (error) {
 		console.error(error);
 
-		alert(
-			"Se ha producido un error. Revisa tu conexión a internet y vuelve" +
-				" a intentarlo."
-		);
+		Swal.fire({
+			icon: "error",
+			title: "Se ha producido un error",
+			text: "Revisa tu conexión a internet y vuelve a intentarlo.",
+		});
 	}
+}
+
+function inputFaltante(nombre) {
+	Swal.fire({
+		icon: "question",
+		title: "Información incompleta",
+		text: `Por favor, ingresa tu ${nombre}.`,
+	});
+}
+
+function inputInvalido(nombre) {
+	Swal.fire({
+		icon: "error",
+		title: "Información inválida",
+		text: `Por favor, ingresa un ${nombre} válido.`,
+	});
 }
