@@ -120,7 +120,7 @@ section p {
 	text-align: justify;
 }
 
-img {
+img:not(.logo) {
 	border-radius: 15px;
 	height: auto;
 }

@@ -22,7 +22,8 @@ app.get("/mensajes", async (req, res) => {
 	try {
 		const { correo, contrasena } = req.body;
 		const usuarios =
-			await sql`SELECT id FROM usuarios WHERE correo = ${correo} AND contrasena = ${contrasena}`;
+			await sql`SELECT id FROM usuarios WHERE correo = ${correo} AND
+				contrasena = ${contrasena}`;
 		if (usuarios.length === 0) throw new Error("Credenciales inválidas");
 
 		const mensajes = await sql`SELECT * FROM mensajes`;
@@ -35,7 +36,8 @@ app.get("/mensajes", async (req, res) => {
 app.post("/mensajes", async (req, res) => {
 	try {
 		const { nombre, correo, mensaje } = req.body;
-		await sql`INSERT INTO mensajes (nombre, correo, mensaje) VALUES (${nombre}, ${correo}, ${mensaje})`;
+		await sql`INSERT INTO mensajes (nombre, correo, mensaje) VALUES
+			(${nombre}, ${correo}, ${mensaje})`;
 
 		res.status(201).send(req.body);
 	} catch (e) {
@@ -47,7 +49,8 @@ app.delete("/mensajes/:id", async (req, res) => {
 	try {
 		const { correo, contrasena } = req.body;
 		const usuarios =
-			await sql`SELECT id FROM usuarios WHERE correo = ${correo} AND contrasena = ${contrasena}`;
+			await sql`SELECT id FROM usuarios WHERE correo = ${correo} AND
+				contrasena = ${contrasena}`;
 		if (usuarios.length === 0) throw new Error("Credenciales inválidas");
 
 		const { id } = req.params;

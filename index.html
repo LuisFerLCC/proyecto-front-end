@@ -13,15 +13,14 @@
 		/>
 	</head>
 	<body>
-		<button class="hamburger-menu" aria-label="Toggle menu">
-			&#9776;
-		</button>
+		<button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
 		<div class="css-container">
 			<aside class="sidebar">
 				<header class="header">
 					<a class="header-title" href="./index.html">
 						<img
 							src="src/iconos/logo.svg"
+							class="logo"
 							alt="Inicio"
 							width="140"
 							height="60"
@@ -45,7 +44,8 @@
 			<main class="content">
 				<section class="flex-container-row">
 					<div class="flex-item flex-container-col">
-						<h1 class="titulo-1"
+						<h1
+							class="titulo-1"
 							style="
 								font-family: 'Damion', cursive !important;
 								font-size: 120px;
@@ -86,10 +86,10 @@
 			</main>
 		</div>
 		<script>
-			const hamburgerMenu = document.querySelector('.hamburger-menu');
-			const sidebar = document.querySelector('.sidebar');
-			hamburgerMenu.addEventListener('click', () => {
-				sidebar.classList.toggle('active');
+			const hamburgerMenu = document.querySelector(".hamburger-menu");
+			const sidebar = document.querySelector(".sidebar");
+			hamburgerMenu.addEventListener("click", () => {
+				sidebar.classList.toggle("active");
 			});
 		</script>
 	</body>

@@ -13,15 +13,14 @@
 		/>
 	</head>
 	<body>
-		<button class="hamburger-menu" aria-label="Toggle menu">
-			&#9776;
-		</button>
+		<button class="hamburger-menu" aria-label="Toggle menu">&#9776;</button>
 		<div class="css-container">
 			<aside class="sidebar">
 				<header class="header">
 					<a class="header-title" href="./index.html">
 						<img
 							src="src/iconos/logo.svg"
+							class="logo"
 							alt="Inicio"
 							width="140"
 							height="60"
@@ -69,7 +68,12 @@
 					<div class="flex-img">
 						<img
 							src="./src/eventos/img-2.jpg"
-							style="width: 26rem; height: 16rem; margin-left: 1rem; padding: 1rem;"
+							style="
+								width: 26rem;
+								height: 16rem;
+								margin-left: 1rem;
+								padding: 1rem;
+							"
 							alt="portada"
 						/>
 					</div>
@@ -78,7 +82,11 @@
 					<div class="flex-img">
 						<img
 							src="./src/eventos/img-1.jpg"
-							style="width: 55vh; margin-left: 0rem; padding: 1rem;"
+							style="
+								width: 55vh;
+								margin-left: 0rem;
+								padding: 1rem;
+							"
 							alt="portada"
 						/>
 					</div>
@@ -95,10 +103,10 @@
 			</main>
 		</div>
 		<script>
-			const hamburgerMenu = document.querySelector('.hamburger-menu');
-			const sidebar = document.querySelector('.sidebar');
-			hamburgerMenu.addEventListener('click', () => {
-				sidebar.classList.toggle('active');
+			const hamburgerMenu = document.querySelector(".hamburger-menu");
+			const sidebar = document.querySelector(".sidebar");
+			hamburgerMenu.addEventListener("click", () => {
+				sidebar.classList.toggle("active");
 			});
 		</script>
 	</body>
