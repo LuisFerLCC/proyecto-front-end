@@ -13,9 +13,12 @@
 		/>
 	</head>
 	<body>
+		<button class="hamburger-menu" aria-label="Toggle menu">
+			&#9776;
+		</button>
 		<div class="css-container">
 			<aside class="sidebar">
-				<header class="header_">
+				<header class="header">
 					<a class="header-title" href="./index.html">
 						<img
 							src="src/iconos/logo.svg"
@@ -43,7 +46,7 @@
 			</aside>
 			<main class="content">
 				<h1 class="section-title">Detalles de los Eventos</h1>
-				<div class="hr" role="separator" style="width: 50.7rem;">
+				<div class="hr" role="separator">
 					<div class="hr-line"></div>
 					<img
 						src="src/iconos/sol.svg"
@@ -63,19 +66,19 @@
 							laboriosam dolore!
 						</p>
 					</div>
-					<div class="flex-item">
+					<div class="flex-img">
 						<img
 							src="./src/eventos/img-2.jpg"
-							style="width: 40vh; margin-left: 5vh"
+							style="width: 26rem; height: 16rem; margin-left: 1rem; padding: 1rem;"
 							alt="portada"
 						/>
 					</div>
 				</section>
 				<section class="flex-container-row">
-					<div class="flex-item">
+					<div class="flex-img">
 						<img
 							src="./src/eventos/img-1.jpg"
-							style="width: 50vh; margin-left: 5vh"
+							style="width: 55vh; margin-left: 0rem; padding: 1rem;"
 							alt="portada"
 						/>
 					</div>
@@ -91,5 +94,12 @@
 				</section>
 			</main>
 		</div>
+		<script>
+			const hamburgerMenu = document.querySelector('.hamburger-menu');
+			const sidebar = document.querySelector('.sidebar');
+			hamburgerMenu.addEventListener('click', () => {
+				sidebar.classList.toggle('active');
+			});
+		</script>
 	</body>
 </html>

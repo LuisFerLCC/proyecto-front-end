@@ -13,9 +13,12 @@
 		/>
 	</head>
 	<body>
+		<button class="hamburger-menu" aria-label="Toggle menu">
+			&#9776;
+		</button>
 		<div class="css-container">
 			<aside class="sidebar">
-				<header class="header_">
+				<header class="header">
 					<a class="header-title" href="./index.html">
 						<img
 							src="src/iconos/logo.svg"
@@ -56,7 +59,7 @@
 							<div class="hr-line"></div>
 						</div>
                         <div class="flex-item flex-container-row">
-							<form style="width: 55%;">
+							<form style="width: 20rem;">
 								<div class="form-group">
 									<label for="nombre">Nombre:</label>
 									<input
@@ -94,13 +97,14 @@
 								</button>
 						</div>
 					</div>
-					<div class="flex-item">
+					<div class="flex-img">
 						<img
 							src="./src/contacto/img-1.png"
 							style="
 								margin-top: 2rem;
 								width: 30rem;
-								margin-left: 10%;
+								margin-left: 6rem;
+								padding: 1rem;
 							"
 							alt="portada"
 						/>
@@ -108,7 +112,13 @@
 				</section>
 			</main>
 		</div>
-
 		<script src="main.js"></script>
+		<script>
+			const hamburgerMenu = document.querySelector('.hamburger-menu');
+			const sidebar = document.querySelector('.sidebar');
+			hamburgerMenu.addEventListener('click', () => {
+				sidebar.classList.toggle('active');
+			});
+		</script>
 	</body>
 </html>

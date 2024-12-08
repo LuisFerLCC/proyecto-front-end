@@ -13,9 +13,12 @@
 		/>
 	</head>
 	<body>
+		<button class="hamburger-menu" aria-label="Toggle menu">
+			&#9776;
+		</button>
 		<div class="css-container">
 			<aside class="sidebar">
-				<header class="header_">
+				<header class="header">
 					<a class="header-title" href="./index.html">
 						<img
 							src="src/iconos/logo.svg"
@@ -55,67 +58,50 @@
 							/>
 							<div class="hr-line"></div>
 						</div>
-						<div class="genero">
-							<div class="genero-item">
-								<img
-								src="./src/generos/clasica.jpg"
-								alt="portada"
-							/>
+						<ul class="generos" style="list-style: none">
+							<li class="genero">
+								<img src="./src/generos/clasica.jpg" alt="portada">
 								<h2>Clásica</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/coral.jpg"
-								alt="portada"
-							/>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/coral.jpg" alt="portada">
 								<h2>Coral</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/instrumental.jpg"
-								alt="portada"
-							/>
-								<h2>instrumental</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/pop.jpg"
-								alt="portada"
-							/>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/instrumental.jpg" alt="portada">
+								<h2>Instrumental</h2>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/pop.jpg" alt="portada">
 								<h2>Pop</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/versatil.jpg"
-								alt="portada"
-							/>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/versatil.jpg" alt="portada">
 								<h2>Versátil</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/reggaton.jpg"
-								alt="portada"
-							/>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/reggaton.jpg" alt="portada">
 								<h2>Reggaeton</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/happening.jpg"
-								alt="portada"
-							/>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/happening.jpg" alt="portada">
 								<h2>Happening</h2>
-							</div>
-							<div class="genero-item">
-								<img
-								src="./src/generos/banda.jpg"
-								alt="portada"
-							/>
+							</li>
+							<li class="genero">
+								<img src="./src/generos/banda.jpg" alt="portada">
 								<h2>Banda</h2>
-							</div>
-						</div>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</main>
 		</div>
+		<script>
+			const hamburgerMenu = document.querySelector('.hamburger-menu');
+			const sidebar = document.querySelector('.sidebar');
+			hamburgerMenu.addEventListener('click', () => {
+				sidebar.classList.toggle('active');
+			});
+		</script>
 	</body>
 </html>
