@@ -115,7 +115,8 @@ body {
 	line-height: 0.9;
 }
 
-section p {
+section p,
+section li {
 	font-size: 30px;
 	text-align: justify;
 }
@@ -294,4 +295,9 @@ img:not(.logo) {
 		width: 100%;
 		text-align: justify !important;
 	}
+}
+
+.contact a {
+	color: #bb44aa;
+	text-decoration: none !important;
 }
